@@ -16,13 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5">
+
         <ImageButton
             android:id="@+id/btn1_1"
-            android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="보기"
-            />
+            android:layout_gravity="center"
+            android:text="보기" />
         <ImageButton
             android:id="@+id/btn1_2"
             android:layout_gravity="center"

@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1;
@@ -16,16 +18,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // 지울 부분, 확인용
-        btn1 = (Button)findViewById(R.id.btn1);
-        btn1.setOnClickListener(new View.OnClickListener() {
+
+        // id 연결
+        EditText idText_2 = (EditText) findViewById(R.id.idText_2);
+        EditText passwordText_2 = (EditText) findViewById(R.id.passwordText_2);
+        Button loginButon2 = (Button) findViewById(R.id.loginButton_2);
+        TextView findpw_2 = (TextView) findViewById(R.id.findpw_2);
+        TextView registerButton_2=(TextView) findViewById(R.id.registerButton_2);
+
+        // 회원가입 누르기
+        registerButton_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent1 = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(Intent1);
+                Intent registerintent = new Intent(MainActivity.this, registerActivity.class);
+                startActivity(registerintent);
                 finish();
             }
         });
+
+        // 로그인
+        
     }
 
     @Override
