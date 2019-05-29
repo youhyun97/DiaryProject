@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">simpleDiary</string>
+    <string name="kakao_app_key">66b4f36eed6e1cb979030fbb2aed384d</string>
 </resources>

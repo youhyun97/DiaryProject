@@ -6,18 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class ThirdActivity extends AppCompatActivity {
-    Button btnChange;
-    @Override
+public class ThirdActivity_2 extends AppCompatActivity {
+    Button btnSave1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.third);
-        btnChange = (Button)findViewById(R.id.btnChange1);
-        btnChange.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.third_2);
+        btnSave1 = (Button)findViewById(R.id.btnSave1);
+        btnSave1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent3 = new Intent(ThirdActivity.this, ThirdActivity_2.class);
-                startActivity(Intent3);
+                Intent intentGoBack = new Intent(ThirdActivity_2.this,ThirdActivity.class);
+                startActivity(intentGoBack);
                 finish();
             }
         });
