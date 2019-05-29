@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/idcheckbtn_2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="41dp"
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
         android:layout_marginBottom="7dp"
@@ -22,20 +22,29 @@
 
     <EditText
         android:id="@+id/idText_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="112dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/idcheck_2"
-        app:layout_constraintEnd_toEndOf="@+id/idcheckbtn_2" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ageText2"
         android:layout_width="0dp"
         android:layout_height="33dp"
         android:layout_marginTop="19dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,64 +68,55 @@
 
     <EditText
         android:id="@+id/pwText_2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
+        android:layout_width="222dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:layout_marginBottom="7dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/nameText_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/idcheck_2" />
+        app:layout_constraintTop_toBottomOf="@+id/idcheck_2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/idcheck_2"
         android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
         android:text="id 중복검사 해주세요"
-        app:layout_constraintBottom_toBottomOf="@+id/idcheckbtn_2"
-        app:layout_constraintEnd_toStartOf="@+id/idcheckbtn_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/idcheckbtn_2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/idcheckbtn_2"
+        app:layout_constraintStart_toStartOf="@+id/idText_2" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="196dp"
         android:text="비밀번호"
         android:textSize="40px"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/pwText_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idcheckbtn_2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="127dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:text="아이디"
         android:textSize="40px"
-        app:layout_constraintBottom_toTopOf="@+id/idcheckbtn_2"
-        app:layout_constraintEnd_toStartOf="@+id/idcheckbtn_2"
+        app:layout_constraintBottom_toBottomOf="@+id/idText_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/idText_2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView10"
@@ -161,6 +161,7 @@
         android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
