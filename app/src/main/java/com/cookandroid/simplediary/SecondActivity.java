@@ -3,18 +3,20 @@ package com.cookandroid.simplediary;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+
+import com.tooltip.Tooltip;
 
 public class SecondActivity extends AppCompatActivity {
-    ImageButton btn1_1, btn1_2;
+    Button btn1_1, btn1_2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second);
 
-        btn1_1 = (ImageButton)findViewById(R.id.btn1_1);
+        btn1_1 = (Button)findViewById(R.id.btn1_1);
         btn1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +25,17 @@ public class SecondActivity extends AppCompatActivity {
                 finish();
             }
         });
-        btn1_2 = (ImageButton)findViewById(R.id.btn1_2);
+//        btn1_1.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                //tooltip
+//                Tooltip tooltip1 = new Tooltip.Builder(btn1_1)
+//                        .setText("보기")
+//                        .show();
+//                return true;
+//            }
+//        });
+        btn1_2 = (Button)findViewById(R.id.btn1_2);
         btn1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,5 +44,17 @@ public class SecondActivity extends AppCompatActivity {
                 finish();
             }
         });
+//        btn1_2.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                //tooltip
+//                Tooltip tooltip1 = new Tooltip.Builder(btn1_2)
+//                        .setText("쓰기")
+//                        .show();
+//                return true;
+//            }
+//        });
+
+
     }
 }

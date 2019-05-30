@@ -28,21 +28,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <Button
+
+            <TextView
+                android:id="@+id/textView1_1"
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
-            <Button
+                android:layout_height="100dp"
+                android:background="#aaffdd"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/textView1_2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
-            <Button
+                android:layout_height="100dp"
+                android:background="#aaffdd"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/textView1_3"
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="100dp" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="100dp" />
+                android:layout_height="100dp"
+                android:background="#aaffdd"
+                android:layout_margin="10dp"/>
+
         </LinearLayout>
     </ScrollView>
 

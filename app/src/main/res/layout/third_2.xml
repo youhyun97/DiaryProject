@@ -9,27 +9,77 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:id="@+id/titleText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textSize="40dp"
+                android:gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Todo"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src ="@drawable/check"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src ="@drawable/check"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src ="@drawable/check"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src ="@drawable/check"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src ="@drawable/check"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -37,16 +87,90 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#ddeeaa"/>
+                android:background="#aaffdd"
+                android:layout_margin="10dp"/>
+
+
+
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="식단"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#ffaaff">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="아침"
+                        android:textSize="15dp"/>
+                    <Button
+                        android:id="@+id/btnCam1_1"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/camera"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src ="@drawable/image"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="점심"
+                        android:textSize="15dp"/>
+                    <Button
+                        android:id="@+id/btnCam1_2"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/camera"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src ="@drawable/image"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="저녁"
+                        android:textSize="15dp"/>
+                    <Button
+                        android:id="@+id/btnCam1_3"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/camera"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src ="@drawable/image"/>
+
+
+
+
+
+
             </LinearLayout>
+
+
+
             <Button
                 android:id="@+id/btnSave1"
                 android:layout_width="wrap_content"
